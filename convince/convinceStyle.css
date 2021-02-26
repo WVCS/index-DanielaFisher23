@@ -32,7 +32,7 @@ h2 {
   display: flex;
 }
   
-.column{
+.column {
   width: 350px;
   height: 400px;
   float: left;
@@ -59,6 +59,7 @@ img.soccer {
   top: 95px;
   left: 710px;
  }
+  
 img.crball {
   position: absolute;
   left: 1050px;
@@ -72,6 +73,5 @@ img.logo {
   left: 900px;
   height: 350px;
   width: 300px;
-  top: 450px;
-  
+  top: 450px; 
 }
