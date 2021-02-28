@@ -48,11 +48,11 @@ h2 {
   height: 160px;
 }
 
-a.link {
+.link {
   color: black;
 }
 
-img.soccer {
+.soccer {
   position: absolute;
   height: 350px;
   width: 350px;
@@ -60,7 +60,7 @@ img.soccer {
   left: 710px;
  }
   
-img.crball {
+  .crball {
   position: absolute;
   left: 1050px;
   height: 350px;
@@ -68,7 +68,7 @@ img.crball {
   top: 95px;
  }
 
-img.logo {
+.logo {
   position: absolute;
   left: 900px;
   height: 350px;
