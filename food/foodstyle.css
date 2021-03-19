@@ -25,3 +25,79 @@ li a:hover {
   background-color: #111;
   letter-spacing: 2px;
 }
+
+.strawberry {
+  height: 250px;
+  width: 25%; 
+  left: 40px;
+}
+
+.cpb { 
+  height: 250px;
+  width: 25%;
+  left: 375px;
+}
+
+.birthday {
+ height: 250px;
+ width: 25%;
+ position: absolute;
+ top: 400px;
+ left: 40px;
+}
+
+.banana {
+ height: 250px;
+ width: 25%;
+ position: absolute;
+ top: 400px;
+ left: 375px;
+}
+
+.chocolatechip {
+ height: 350px;
+ width: 30%;
+ position: absolute;
+ top: 640px;
+ left: 40px;
+}
+
+.oreo {
+ height: 280px;
+ width: 20%;
+ position: absolute;
+ top: 670px;
+ left: 400px;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+  float: right;
+}
+
+th {
+  height: 70px;
+}
+
+td {
+  padding: 4px;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #A6C2DB;
+}
+
+body {
+  background-color: #CAF4C8;
+  margin: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
