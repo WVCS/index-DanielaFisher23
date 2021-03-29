@@ -38,7 +38,7 @@ h2 {
 .ball {
   position: absolute;
   height: 200px;
-  width: 150px;
+  width: 220px;
   left: 10%;
   top: 40px;
 }
@@ -46,7 +46,7 @@ h2 {
 .ball2 {
   position: absolute;
   height: 200px;
-  width: 150px;
+  width: 220px;
   left: 80%;
   top: 40px;
 }
