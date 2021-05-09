@@ -1,1 +1,91 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Amusement Park </title>
+</head>
+  
+ <ul class="nav">
+  <li class="nav"><a href="../index.html">About Me</a></li>
+  <li class="nav"><a href="amusement.html">Amusement</a></li>
+  <li class="nav"><a href="#destinations"> Destinations </a>
+  </li>
+  <li class="nav"><a href="#tickets"> Tickets </a>
+  </li>
+</ul>
+  
+<body>
+  <center><h3> Saturn </h3> </center>
+  <img class="saturn" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/AW_187527_OUTERPLANETS_Saturn_doegjg.png">
+  
+  <hr> </hr>
+  
+  <center> <h3 id="destinations"> Destinations </h3> </center>
+  
+  <div class="row">
+  <div class="column">
+    <img src="http://www.olsonindependent.com/solarSystem/images/titan.png" alt="Titan" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90ad8232-4e09-4675-b9e7-bc2898960870/dar4uyo-cf4a4305-afa4-46cb-bb8c-273a58141cf7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwYWQ4MjMyLTRlMDktNDY3NS1iOWU3LWJjMjg5ODk2MDg3MFwvZGFyNHV5by1jZjRhNDMwNS1hZmE0LTQ2Y2ItYmI4Yy0yNzNhNTgxNDFjZjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XEvR41x_T8ten2O1LKgw85lN549hjnEeEv_a-yNJzJM" alt="Mimas" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www6.solarsystemscope.com/spacepedia/images/handbook/renders/dione.png" alt="Dione" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.solarsystemscope.com/spacepedia/images/handbook/renders/iapetus.png" alt="Lapetus" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
 
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+  
+  <button onclick="topFunction()" id="returnBn"> RETURN TO TOP </button>
+  
+  <center> 
+    <h3 id="tickets"> Tickets </h3>
+    <table>
+   <tr>
+    <th>Adults (ages 18 and up) </th>
+    <th> Juniors (ages 13-17) </th>
+    <th> Kids (under 12) </th>
+  </tr>
+  <tr>
+    <td> $55</td>
+    <td> $45 </td>
+    <td> $35 </td>
+  </tr>
+</table>
+</center>
+  
+  <script>
+    function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {buttonFunction()};
+
+function buttonFunction() {
+  if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) 
+    document.getElementById("returnBn").style.display = "block";
+  else {
+    document.getElementById("returnBn").style.display = "none";
+  }
+}
+  </script>
+  
+</body>
+</html>
