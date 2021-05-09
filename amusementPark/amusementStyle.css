@@ -1,1 +1,133 @@
+ul.nav {
+  list-style-type: none;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #F5DD90;
+  padding: 10px;
+  margin: 0;
+}
 
+li.nav {
+  display: inline;
+  padding: 20x;
+  margin: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+li.nav a:hover {
+  background-color: #111;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: black;
+}
+
+h3 {
+  font-size: 4vw;
+  color: white; 
+}
+
+.saturn {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+  width: 80%;
+  margin: 10%;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#returnBn {
+  display: none;
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  font-size: 24px;
+  background-color: #F5DD90;
+  padding: 20px;
+  border: none;
+}
+
+table, td, th {
+  border: 1px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th {
+  height: 70px;
+  color: white;
+}
+
+td {
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+tr:hover {
+  background-color: #F5DD90;
+}
+
+@media screen and (max-width:800px) {
+  .nav {
+    visibility: hidden; 
+  }
+  .table {
+    width: 80%;
+  }
+  .column {
+    width: 100%;
+  }
+}
