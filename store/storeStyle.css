@@ -174,14 +174,14 @@ h3 {
     width: 20%;
     position: absolute;
     left: 1%;
-    top: 10%;
+    top: 14%;
     z-index: +1;
   }
   #search, #myInput, .autocomplete {
     width: 60%;
     position: absolute;
-    left: 8%;
-    top: 17%;
+    left: 10%;
+    top: 19%;
   }
   .container, .clothing {
     width: 100%;
