@@ -16,15 +16,37 @@
   <br></br>
 
   <h1><i> Rafael Nadal </i></h1>
-  
-<img src="https://media3.s-nbcnews.com/i/newscms/2020_32/3402263/200808-rafael-nadal-us-open-jm-0938_8c947141bcf38fcfdb77568e9855598f.jpg" style="width:400px;height:400px;">
-    <img src="https://sportshub.cbsistatic.com/i/r/2018/06/04/3d569d5c-1f54-498c-ad78-c3085de74dff/thumbnail/1200x675/05771c3e07c9e82b703b23060170ccb3/rafael-nadal.jpg" style="width:400px;height:400px;">
-    <img src="https://storage.googleapis.com/afs-prod/media/a2e26df7d355498e94baf3c49b0e72d5/800.jpeg" style="width:400px;height:400px;">
+    
+    
+     <div class="wrapper">
+  <div class="box a"> 
+    <center> <h2> Background Information </h2> </center>
+    <p> Rafael "Rafa" Nadal Parera is a Spanish professional tennis player. He is ranked world No. 3 by the Association of Tennis Professionals, has been ranked No. 1 in the ATP rankings for 209 weeks, and has finished as the year-end No. 1 five times. </p> 
+    </div>
+    <div class="box b"> 
+      <center> <h2> Rafael Nadal </h2>
+        <p> Born: June 3, 1986  Manacor, Spain </p>
+        <p> Height: 6'1'' </p> 
+        <p> Grand Slam Titles: 20 </p>
+      </center> </div>
+    <div class="box c"> <center> 
+      <img class="nadal" src="https://media3.s-nbcnews.com/i/newscms/2020_32/3402263/200808-rafael-nadal-us-open-jm-0938_8c947141bcf38fcfdb77568e9855598f.jpg">
+           </center> </div>
+    <div class="box d"> <center>
+      <img class="nadal" src="https://sportshub.cbsistatic.com/i/r/2018/06/04/3d569d5c-1f54-498c-ad78-c3085de74dff/thumbnail/1200x675/05771c3e07c9e82b703b23060170ccb3/rafael-nadal.jpg">
+      </center> </div>
+      <div class="box e"> <center>
+        <img class="nadal" src="https://storage.googleapis.com/afs-prod/media/a2e26df7d355498e94baf3c49b0e72d5/800.jpeg">
+        </center> </div>
+</div>
+    
+    <hr> </hr>
     
     <center>
+      <h1> Grand Slam Titles </h1>
     <table>
       <tr> 
-        <th> Grand Slam Titles </th>
+        <th> Title </th>
         <th> Year Won </th>
     </tr>
       <tr>
@@ -45,15 +67,35 @@
       </tr>
     </table>
     </center>
+  <hr> </hr>
       
-    <h2> Famous Quotes: </h2>
+    <h1> Famous Quotes: </h1>
     <ul>
       <li> “You fight, you try your best, but if you lose, you don't have to break five racquets and smash up the locker room."  </li>
       <li> “No one is perfect." </li>
       <li> “For me, it is important to win titles and for that I need to work hard, stay healthy and be able to compete. The rest, I always say, it comes.” </li>
   </ul>
+
+<button onclick="topFunction()" id="returnBn"> TOP </button>
     
 </body> 
+
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {buttonFunction()};
+
+function buttonFunction() {
+  if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) 
+    document.getElementById("returnBn").style.display = "block";
+  else {
+    document.getElementById("returnBn").style.display = "none";
+  }
+}
+</script>
 
 <style>
 
@@ -66,6 +108,53 @@ h1 {
   color: teal;
 }
 
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 33% 33% 33%;
+		background-color: #FEC3A6;
+		color: #444;
+	}
+
+	.box {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+	}
+
+	.a {
+		grid-column: 1 / 3;
+		grid-row: 1;
+    background-color: #495D63;
+	}
+	.b {
+		grid-column: 3 ;
+		grid-row: 1 / 2;
+    background-color: #495D63;
+	}
+	.c {
+		grid-column: 1 ;
+		grid-row: 2 ;
+    background-color: #495D63;
+	}
+	.d {
+		grid-column: 2;
+		grid-row: 2;
+    background-color: #495D63;
+	}
+.e {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #495D63;
+}
+
+.nadal {
+  height: 200px;
+  width: 300px;
+}
+
 table, th, tr {
   border: 2px dotted teal; 
  
@@ -76,7 +165,18 @@ table {
 }
 
 h2 {
-  color: teal;
+  color: white;
+}
+
+#returnBn {
+  display: none;
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  font-size: 24px;
+  background-color: #495D63;
+  padding: 20px;
+  border: none;
 }
 
 </style>
