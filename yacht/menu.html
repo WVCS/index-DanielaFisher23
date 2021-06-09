@@ -1,1 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yacht</title>
+</head>
+  
+ <ul class="nav">
+  <li class="nav"><a href="../index.html">About Me</a></li>
+  <li class="nav"><a href="home.html">Home</a></li>
+  <li class="nav"><a href="menu.html"> Menu </a></li>
+  <li class="nav"><a href="#price"> Pricing </a></li>
+</ul>
+  
+  <br> </br>
+  
+<body>
+  <img class="logo" src="https://www.nauticalmonkey.com/img/yacht.png">
+  <img class="logo1" src="https://www.nauticalmonkey.com/img/yacht.png">
+  <center> <h3> Menu </h3> </center>
+  <div class="wrapper">
+  <div class="item"> <img src="https://bonteacafe.com/static/assets/images/top-2.png" class="food"> <p> WAFFLES </p></div>
+  <div class="item"> <img src="https://pngimg.com/uploads/croissant/croissant_PNG46693.png" class="food"> <p> PASTRIES </p> </div> 
+  <div class="item"> <img src="https://i.pinimg.com/originals/5f/14/f4/5f14f4584be053484691bc35771edce6.png" class="food"> <p> SCRAMBLED EGGS AND SAUSAGE </p> </div>
+  <div class="item"> <img src="https://deltaco.com/files/menu/item/breakfast-burritos.png?v=3.997" class="food"> <p> BURRITOS </p> </div> 
+  <div class="item"> <img src="https://www.jerseymikes.com/media/static/bedrock/lg/7-turkey-reg.png" class="food"> <p> TURKEY DELUXE </p> </div>
+  <div class="item"> <img src="https://d1ralsognjng37.cloudfront.net/9fb23097-e07f-46fe-bda2-1e2e29b62c15.png" class="food"> <p> CALIFORNIA DELIGHT </p> </div>
+  <div class="item"> <img src="https://www.romasitalian.rocks/wp-content/uploads/2018/03/Big-Sandwich.png" class="food"> <p> VEGGIE SUPREME </p> </div>
+  <div class="item"> <img src="https://www.jerseymikes.com/media/static/bedrock/sm/3-american-classic-reg.png" class="food"> <p> ITALIAN SUB </p> </div>
+  <div class="item"> <img src="https://www.buffalowildwings.com/globalassets/menuitems/10250002_chickencaesarsalad_9.2.20.png?format=png&width=600&v=2" class="food"> <p> CEASER SALAD </p> </div>
+  <div class="item"> <img src="https://www.countrystyle.com/wp-content/uploads/2016/11/LUNCH-SALADcobb.png" class="food"> <p> COBB SALAD COUNTRY STYLE </p> </div>
+  <div class="item"> <img src="https://www.mcdonalds.com/content/dam/ArabiaGWS/english/nfl/Nutrition/Items/Regular/tiramisu-cake.png" class="food"> <p> TIRAMISU </p> </div>
+  <div class="item"> <img src="https://www.simplehomecookedrecipes.com/wp-content/uploads/2021/02/Creme-Brulle-750x500.png" class="food"> <p> CREME BRULEE </p> </div> 
+  </div>
+  
+  <hr> </hr>
+<div class="price" id="price"> 
+  <div class="header"> <center> <h3>PRICING</h3> </center>
+		  </div>
+  <br>
+   <div class="package-container">
+                  <div class="packages">
+                      <div class="pricing-title pb-3">
+                        Discounts/Bonuses
+                      </div>
+                    <ul class="list text-center">
+                      <li>Lottery tickets: A chance to win a free day on the yacht</li>
+                      <li>10 minutes online yacht tour </li>
+                      <li>20% off one night the second visit  </li>
+                      <li>Ticket Support</li>
+                    </ul>
+                    <a href="#price" class="button pricing-button">Start Now</a>
+                  </div>
+                  <div class="packages">
+                    <div class="pricing-title">
+                       Premium
+                    </div>                    
+                    <h2 class="text1">&dollar;4500</h2>
+                    <ul class="list">
+                      <li>5 days / 4 nights </li>
+                      <li>Unlimited access to food bar</li>
+                      <li>Room service</li>
+                      <li>Full support package</li>
+                      <li>Unlimited access to boat deck</li>
+                    </ul>
+                    <a href="#price" class="button pricing-button">Start Now</a>
+                  </div>
+                  <div class="packages">
+                    <div class="pricing-title">
+                        General Admission
+                    </div>                   
+                    <h2 class="text1">&dollar;3000</h2>
+                    <ul class="list">
+                      <li>3 days / 2 nights </li>
+                      <li>Unlimited access to food bar</li>
+                      <li>Unlimited access to boat deck</li>
+                      <li>Ticket support</li>
+                    </ul>
+                    <a href="#price" class="button pricing-button">Start Now</a>
+                  </div>
+                </div>
+              </div> 
+        </section>
+  </div>
+  
+  <button onclick="topFunction()" id="returnBn"> ^ </button>
 
+</body>
+
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {buttonFunction()};
+
+function buttonFunction() {
+  if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) 
+    document.getElementById("returnBn").style.display = "block";
+  else {
+    document.getElementById("returnBn").style.display = "none";
+  }
+}
+</script>
+  
+</html>
