@@ -11,14 +11,14 @@ ul.nav {
 
 li.nav {
   display: inline;
-  padding: 10x;
-  margin: 5px;
+  padding: 15x;
+  margin: 15px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 100%;
+  font-size: 120%;
 }
 
 li a:hover {
